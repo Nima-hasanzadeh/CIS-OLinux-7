@@ -1,12 +1,15 @@
 # CIS Automated Hardening and Auditing Script for Oracle Linux-7
 
 
+
+
 How to Use the Script:
 To get started, simply execute the `start` file in a Linux environment:
 
 ```bash
 sudo bash start
 ```
+
 
 When you run this file, you will have two options:
 
@@ -19,8 +22,9 @@ The index number of each item is specified in the output,These indexes derived f
 At the end, a summary of the performed tasks and their success rate will be displayed as a graphical report.
 
 **Please Note:** The script must be executed by root access. If you run the script through a user without root access, the process will be aborted with an error message.
-
-**Notes about starting the hardening Script**
+ 
+ 
+## Notes about starting the hardening Script
 
 At the beginning of executing hardening script , you will be asked for three questions:
 
@@ -34,13 +38,12 @@ At the beginning of executing hardening script , you will be asked for three que
 In the next step, your operating system version will be checked. If it does not match the defined version, you will receive an error message indicating that this script does not support your operating system version.
 This is an important safety measure, if the operating system version is incompatible, running the script may lead to issues.
 
-### Files and Directories
+## Files and Directories
 
 In the current directory of script files, a set of files and directories will be created, so it is recommended to execute the script in a separate directory.
 
-##### Script files :
 
-##### **Logs and backups descriptions :**
+#### Logs and backups descriptions
 
 By running the **Auditing** process (Caliper), you will generate the following files:
 
